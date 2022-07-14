@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract</title>
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="loghi">
+            <div class="logo">
+                <img src="img77.PNG" alt="logo" width="85%">
+            </div>
+            <div class="help">
+                <h2>Help Center</h2>
+            </div>
+        </div>
+        <div class="icone">
+            <div class="cerca icona" id="btn"><span class="material-symbols-outlined">
+                search
+                </span></div>
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+
+                 <div class="Dropdown">
+        <div class="divone">
+            <div class="fa uno">Submit a request</div>
+            <div class="fa due">Sign in</div>
+        </div>
+    </div>
+        </div>
+        
+    </header>
+
+   
+
+
+
+<script>
+   /*  const button = document.getElementById("btn");
+    const dropdown = document.getElementById("dropdown");
+
+    dropdown.style.display = none; 
+     button.addEventListener("click", (event) => {
+        if (dropdown.style.display == "none") {
+            dropdown.style.display = "block"
+        } else {
+            dropdown.style.display = "none";
+        }
+
+     })
+ */
+
+ /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    
+
+
+</script>
+
+</body>
+</html>
